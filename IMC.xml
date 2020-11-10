@@ -7864,6 +7864,23 @@
         the value spans from 0 to 2 Pi.
       </description>
     </field>
+    <field name="Pitch Threshold" abbrev="pitch_thresh" type="fp64_t" unit="rad" min="-1" max="6.283185307179586">
+      <description>
+        The theha Euler angle threshold for which the vehicle should
+        enable thrust while floating to the surface. Use '-1' for this field to never enable thrust while ascending.
+        Otherwize the value spans from 0 to 2 Pi.
+      </description>
+    </field>
+    <field name="RPM" abbrev="rpm" type="fp32_t">
+      <description>
+        The maneuver RPM reference when enabling thrust for controlling pitch angle during ascent.
+      </description>
+    </field>
+    <field name="Thrust Duration" abbrev="thrust_duration" type="uint16_t" unit="s">
+      <description>
+        The duration thrust is enabled once the pitch threshold is reached.
+      </description>
+    </field>
     <field name="Custom settings for maneuver" abbrev="custom" unit="TupleList" type="plaintext">
       <description>
         Custom settings for maneuver.
