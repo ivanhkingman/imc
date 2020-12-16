@@ -7876,6 +7876,21 @@
         The target depth value for which the task is considered complete.
       </description>
     </field>
+    <field name="Thrust Duration" abbrev="thrust_duration" type="uint16_t" unit="s">
+      <description>
+        The duration for which thrust should be enabled once the vehicle pitch falls below the pitch threshold.
+      </description>
+    </field>
+    <field name="Pitch Threshold" abbrev="pitch_threshold" type="fp64_t" unit="rad" min="0" max="6.283185307179586">
+      <description>
+        The lower pitch threshold for enabling thrust. When the vehicle pitch falls below this value, a set length thrust burst is activated.
+      </description>
+    </field>
+    <field name="Burst RPM" abbrev="burst_rpm" type="fp32_t" unit="-" min="0" max="1000">
+      <description>
+        The RPM value for thrust bursts.
+      </description>
+    </field>
     <field name="Custom settings for maneuver" abbrev="custom" unit="TupleList" type="plaintext">
       <description>
         Custom settings for maneuver.
